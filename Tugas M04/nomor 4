@@ -1,1 +1,17 @@
+fun main() {
+    val scores = mutableMapOf<Int, Int>(
+        151 to 80,
+        158 to 75,
+        242 to 90
+    )
 
+    scores[151] = 85
+
+    scores.remove(158)
+
+    for ((nim, score) in scores) {
+        println("$nim - $score")
+    }
+
+    println(scores[149])
+}
