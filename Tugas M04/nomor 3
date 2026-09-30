@@ -1,1 +1,14 @@
+fun main() {
+    val keahlian = mutableSetOf("Kotlin", "Java")
+    
+    keahlian.add("Python")
+    keahlian.add("Kotlin")
+    
+    println(keahlian.size)
+    
+    println("Swift" in keahlian)
+    println("Python" in keahlian)
+}
 
+//kenapa ukuran set tidak bertambahkan saat "Kotlin" ditambahkan? 
+//Jawaban nya di Mutable Set menambahkan elemen yang sudah ada tidak menambah ukuran Set karena Set hanya menyimpan elemen yang unik.
